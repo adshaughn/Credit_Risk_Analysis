@@ -10,27 +10,27 @@ The purpose of this analysis is to better understand which markers (variables) a
  
 - Our first model uses naive random sampling, and gives us results that show high predictive power for those who are low risk, but low power for those that are high-risk. This has the potential to open up our institution to loan defaults.
 
-![Naive_Random](/images/naive_random.png)
+![Naive_Random](/Images/naive_random.png)
 
 - Moving on to the model that uses the SMOTE oversampling methodology, we get a similar result, yet with even lower sensitivity.
 
-![SMOTE](/images/smote_over.png)
+![SMOTE](/Images/smote_over.png)
 
-- When undersampling, we can see that XXX
+- When undersampling, we can see that the sensitivty for low-risk lendees has decreased.
 
-![Undersampling](/images/under.png)
+![Undersampling](/Images/under.png)
 
-- Four
+- Using a combination model allows for greater precision and accuracy than using either over- or under- sampling alone.
 
-![Combination](/images/combo.png)
+![Combination](/Images/combo.png)
 
-- Five
+- The Balance Random Forest classifier gives us the greatest precision and accuracy yet.
 
-![Forest](/images/forest.png)
+![Forest](/Images/forest.png)
 
 - The easy ensemble methodolgy yields the strongest sensitivity by far, with greater than 90% in both low- and high-risk categories.
  
-![Easy_Ensemble](images/easy_ensemble.png)
+![Easy_Ensemble](Images/easy_ensemble.png)
  
 ## Summary
 
