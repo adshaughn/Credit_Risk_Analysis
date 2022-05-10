@@ -7,6 +7,31 @@ The purpose of this analysis is to better understand which markers (variables) a
 
  Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
  
+ 
+- Our first model uses naive random sampling, and gives us results that show high predictive power for those who are low risk, but low power for those that are high-risk. This has the potential to open up our institution to loan defaults.
+
+![Naive_Random](/images/naive_random.png)
+
+- Moving on to the model that uses the SMOTE oversampling methodology, we get a similar result, yet with even lower sensitivity.
+
+![SMOTE](/images/smote_over.png)
+
+- When undersampling, we can see that XXX
+
+![Undersampling](/images/under.png)
+
+- Four
+
+![Combination](/images/combo.png)
+
+- Five
+
+![Forest](/images/forest.png)
+
+- The easy ensemble methodolgy yields the strongest sensitivity by far, with greater than 90% in both low- and high-risk categories.
+ 
+![Easy_Ensemble](images/easy_ensemble.png)
+ 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+Therefore, based on the above, it makes the most sense for us to implement the Easy Ensemble method in checking credit worthiness in loan applications. This model shows both the highest precision and sensitivity, allowing us to best understand the financial health of a given customer when evaluating their application for a loan.
